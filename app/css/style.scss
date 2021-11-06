@@ -1,0 +1,42 @@
+@import 'variables';
+html, body{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+
+   #meat{
+       width:100%;
+       height:100%;
+    display:grid;
+    
+    grid-template-areas: 
+            "header header"
+            "nav display"
+            "nav choice";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 75px 3fr 1fr;
+    > * {
+        border:1px solid blue;
+        
+    }
+    header{
+        grid-area: header;
+    }
+    nav{
+        grid-area: nav;
+
+    }
+    main{
+        grid-area: display;
+    }
+    .options{
+        grid-area:choice;
+    }
+   }
+}

@@ -1,0 +1,40 @@
+{
+    "fields": [
+        {
+            "text": {
+                "name": "title",
+                "default": "Here be a title"
+            }
+        },
+        {
+            "text": {
+                "name": "subtext",
+                "default": "<p>Here be some subtext of some kind</p><p>and we get a new paragraph</p>"
+            }
+        },
+        {
+            "image": {
+                "name": "background_image",
+                "default": ""
+            }
+        },
+        {
+            "color": {
+                "name": "background_color",
+                "default": "#cccccc"
+            }
+        },
+        {
+            "choice": {
+                "name": "background_position",
+                "default": "center",
+                "options": [
+                    "Center|center",
+                    "Left|left",
+                    "Right|right"
+                ]
+            }
+        }
+    ]
+    
+}

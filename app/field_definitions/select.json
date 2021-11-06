@@ -1,0 +1,9 @@
+{
+    "select": {
+        "name": "",
+        "default": "",
+        "options": [
+            "label|value"
+        ]
+    }
+}
