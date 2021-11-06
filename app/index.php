@@ -7,6 +7,3 @@ $action = $_REQUEST['action'];
 $blocks_path = '../blocks';
 include 'utilities/wp.php';
 include 'utilities/app.php';
-
-
-echo 'hello';
