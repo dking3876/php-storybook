@@ -9,3 +9,4 @@ include 'utilities/wp.php';
 include 'utilities/app.php';
 
 
+echo 'hello';
