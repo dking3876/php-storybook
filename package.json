@@ -5,8 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass-watch": "gulp",
-    "sass-compile": "gulp sass"
+    "sass-compile": "gulp sass",
+    "serve": "gulp"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-util": "^3.0.8",
     "notify-send": "^0.1.2",
+    "openurl": "^1.1.1",
     "postcss": "^8.3.5",
     "serve": "^13.0.2"
   },

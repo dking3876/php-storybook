@@ -42,7 +42,8 @@ gulp.task('sass', function () {
   });
   gulp.task('default', gulp.series('sass', 'watch'));
 
-  exec("php -S localhost:8050 -t app/",(error, stdout, stderr) => {
+  exec("php -S localhost:8050",(error, stdout, stderr) => {
+    
     if (error) {
         console.log(`error: ${error.message}`);
         return;
@@ -53,12 +54,5 @@ gulp.task('sass', function () {
     }
     console.log(`stdout: ${stdout}`);
 });
-const server = http.createServer((request, response) => {
-  // You pass two more arguments for config and middleware
-  // More details here: https://github.com/vercel/serve-handler#options
-  return handler(request, response);
-})
 
-server.listen(3000, () => {
-  console.log('Running at http://localhost:3000');
-});
+require("openurl").open("http://localhost:8050");
